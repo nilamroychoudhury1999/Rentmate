@@ -174,7 +174,7 @@ def register(request):
         )
     user.save()
     login(request, user)
-    return redirect("/profile/")
+    return redirect("/")
 
 @login_required(login_url='/login')
 def profile(request):
