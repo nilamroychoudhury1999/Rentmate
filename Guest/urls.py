@@ -29,8 +29,7 @@ admin.site.index_title = "Welcome to Rental Admin Portal"
 
 admin.autodiscover()
 urlpatterns = [
-    re_path(r'^$', RedirectView.as_view(url='/index/')),
-    re_path(r'^index/',views.index),
+    re_path(r'^$',views.index),
     re_path(r'^home/',views.home),
 	re_path(r'^contact/', views.contact),
     re_path(r'^about/',views.about),
